@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding-bottom: 115px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @media (max-width: 1339px) {
+    max-width: 930px;
+  }
+
+  @media (max-width: 1019px) {
+    max-width: 610px;
+  }
+
+  @media (max-width: 699px) {
+    max-width: 330px;
+    padding: 0 15px;
+  }
+}

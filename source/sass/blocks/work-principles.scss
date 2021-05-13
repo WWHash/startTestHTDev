@@ -1,0 +1,161 @@
+.work-principles {
+  background-color: $bg-main;
+  padding-bottom: 98px;
+
+  h2 {
+    margin-left: 61px;
+    margin-bottom: 52px;
+    line-height: 38px;
+    font-size: 32px;
+    color: $title;
+  }
+}
+
+.work-principles .swiper-container {
+  width: 95%;
+  height: 100%;
+  margin-right: 0;
+  background-color: $bg-white;
+}
+
+.work-principles__slide {
+  position: relative;
+  padding: 44px 61px 53px 46px;
+  box-sizing: border-box;
+
+  h3 {
+    width: 90%;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+.work-principles__image {
+  margin-bottom: 28px;
+
+  svg {
+    width: 100%;
+  }
+}
+
+.work-principles__pagination {
+  display: none;
+}
+
+.work-principles__controls {
+  position: absolute;
+  top: 54px;
+  right: 49px;
+  width: 30px;
+  z-index: 2;
+
+  button {
+    position: relative;
+    display: block;
+    height: 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 1.5px;
+      background-color: rgba(black, 0.5);
+      content: "";
+    }
+
+    &:hover {
+      &::after {
+        background-color: rgba(black, 1);
+      }
+
+      &::before {
+        border-top: 2px solid rgba(black, 1);
+      }
+    }
+  }
+}
+
+.work-principles__btn--next::before {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  width: 9px;
+  height: 15px;
+  border-top: 2px solid rgba(black, 0.5);
+  border-right: 2px solid transparent;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.work-principles__btn--prev::before {
+  position: absolute;
+  top: -8px;
+  left: 4px;
+  width: 9px;
+  height: 15px;
+  border-top: 2px solid rgba(black, 0.5);
+  border-right: 2px solid transparent;
+  content: "";
+  transform: rotate(-136deg);
+}
+
+@media (max-width: 1019px) {
+  .work-principles .swiper-pagination {
+    display: flex;
+    left: 40%;
+  }
+}
+
+//mobile
+@media (max-width: 699px) {
+  .work-principles {
+    padding-bottom: 54px;
+
+    h2 {
+      margin-left: 21px;
+      margin-bottom: 27px;
+      line-height: 28px;
+      font-size: 24px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .work-principles .swiper-container {
+    width: 93%;
+    height: 100%;
+    padding-bottom: 22px;
+  }
+
+  .work-principles__slide {
+    padding: 31px 21px 21px 19px;
+
+    h3 {
+      width: 100%;
+      margin-bottom: -4px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    p {
+      line-height: 18px;
+      font-size: 12px;
+    }
+  }
+
+  .work-principles__image {
+    margin-bottom: 13px;
+  }
+
+  .work-principles__controls {
+    display: none;
+  }
+}
