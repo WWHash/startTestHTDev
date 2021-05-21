@@ -276,6 +276,11 @@
       line-height: 18px;
       font-size: 12px;
     }
+
+    &::before {
+      top: 30px;
+      left: -11px;
+    }
   }
 
   .project__footer {
